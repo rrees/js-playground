@@ -1,0 +1,31 @@
+<script>
+
+function notificationsAllowed(theWindow) {
+	if(Notification.permission === 'granted') {
+		return true;
+		}
+	if(Notification.permission === 'denied') {
+		return false;
+		}
+	var permission = false;
+
+	Notification.requestPermission(function (permission) {
+		console.log(permission);
+		if(permission === 'granted') {
+			permission =  true;
+			}
+		permission = false;
+	});
+	return permission;
+}
+function notifyMe() {
+	console.log('hello world');
+	console.log(notificationsAllowed(window));
+	var i = 1;
+	const notification = new Notification(i + ": Hello");
+	}
+
+
+</script>
+
+<button onclick="notifyMe()">Click me</button>
