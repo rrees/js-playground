@@ -1,0 +1,17 @@
+{
+  "name": "js-playground",
+  "version": "0.0.0",
+  "authors": [
+    "Robert Rees"
+  ],
+  "description": "Test page",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "None",
+  "private": true,
+  "dependencies": {
+    "transducers-js": "0.4.132"
+  }
+}
