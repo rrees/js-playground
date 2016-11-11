@@ -1,0 +1,9 @@
+{
+	"result": {
+		"vehicles": [
+			"Ship",
+			"Bus",
+			"Tram"
+		]
+	}
+}
